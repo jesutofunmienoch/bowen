@@ -1,0 +1,300 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #800020;
+    color: white;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #ffc107;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.btn button {
+    align-items: center;
+    background-color: #ffc107;
+    border: none;
+    color: #800020;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.btn button:hover {
+    background-color: #ffda6b;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    background: url('image.jpg') center/cover no-repeat;
+    height: 585px;
+    width: 100%;
+    padding-top: 10rem;
+
+}
+
+.hero .text h2 {
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px #800020;
+}
+
+.hero .text p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 2px 2px #800020;
+}
+.home-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 15rem;
+    color: white;
+    cursor: pointer;
+}
+.home-text>div{
+    background-color: #800020;
+    padding: 25px 30px;
+    border-radius: 40px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    font-size: 10px;
+    padding-left: 10px;
+}
+.home-text>div:hover{
+    background-color: #a4002e;
+}
+.logo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo>div{
+    padding-left: 1rem;
+}
+
+.logo img{
+    width: 50px;
+    border-radius: 5px;
+    
+}
+
+
+
+.background-text{
+    height: 310px;
+    width: 100%;
+    background-color: #800020;
+    text-align: center;
+    padding-top: 3rem;
+}
+.background-text h1{
+    font-size: 3rem;
+    color: #ffc107;
+}
+.background-text p{
+    font-size: 16px;
+    color: #fff;
+    padding: 1rem 15rem;
+    
+}
+.btn button{
+    align-items: center;
+    background-color: #ffc107;
+    border: none;
+    color: #800020;
+    padding: 20px 26px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+}
+
+
+.main-about{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    width: 100%;
+}
+.left-about{
+    width: 600px;
+}
+.grids{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.grid{
+    background-color: #f1f3f4;
+    margin-right: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+}
+.grid h1{
+    color: #800020;
+    font-size: 16px;
+}
+.right-about img{
+    width: 550px;
+    height: 570px;
+    object-fit: cover;
+    border: 8px solid #800020;
+    border-radius: 20px;
+}
+.about-title{
+    padding: 1rem 0;
+    color: #ffc107;
+}
+.left-about p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+.programs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #a4002e;
+}
+#programs{
+
+    margin-top: 5rem;
+}
+
+.program-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 400px;
+}
+
+.date-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #800020;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.date-badge span {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    margin: 20px 15px 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.program-card p {
+    margin: 0 15px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.program-card button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background-color 0.3s;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.program-card button:hover {
+    background-color: #a4002e;
+}
